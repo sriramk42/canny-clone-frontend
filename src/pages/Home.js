@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import FeatureRequestCard from '../components/FeatureRequestCard';
-import { FeatureReqContext } from '../context/FeedbackReqContext';
+import { FeatureReqContext } from '../context/FeatureReqContext';
 
 const Home = () => {
 
