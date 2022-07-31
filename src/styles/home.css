@@ -1,0 +1,10 @@
+.home {
+  display: flex;
+  max-width: 960px;;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

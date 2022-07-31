@@ -1,0 +1,12 @@
+.feature-req-card {
+  display: flex;
+  align-items: center;
+  margin: 0 0 30px;
+}
+
+.feature-votes {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
