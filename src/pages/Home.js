@@ -14,7 +14,17 @@ const Home = () => {
         </section>
         <section className="home-right">
           <main>
-            {featureReqs.length > 0 ? "Features" : "No feature reqs"}
+            {featureReqs.length > 0 ?  (
+              <ul>
+                {featureReqs.map((featureReq) => {
+                  return (
+                    <li>
+                      <FeatureRequestCard featureReq={featureReq} />
+                    </li>
+                  )
+                })}
+              </ul>
+            ) : "No feature reqs"}
           </main>
         </section>
       </div>

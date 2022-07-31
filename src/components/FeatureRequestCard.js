@@ -6,7 +6,7 @@ export default function FeatureRequestCard({ featureReq }) {
   return (
     <div>
       <UpvoteBtn />
-      <CommentsCount />
+      <CommentsCount count={featureReq.comments.length}/>
     </div>
   );
 }

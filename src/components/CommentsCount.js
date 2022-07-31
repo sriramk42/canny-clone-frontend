@@ -1,8 +1,12 @@
 import React from 'react'
+import { FaRegCommentAlt } from "react-icons/fa"
 
-const CommentsCount = () => {
+const CommentsCount = ({count}) => {
   return (
-    <div>CommentsCount</div>
+    <div>
+      <FaRegCommentAlt />
+      <b>{count}</b>
+    </div>
   )
 }
 
