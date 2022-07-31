@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CommentsCount from './CommentsCount';
 import UpvoteBtn from './UpvoteBtn';
 import '../styles/feature-request-card.css'
@@ -6,10 +7,22 @@ import '../styles/feature-request-card.css'
 export default function FeatureRequestCard({ featureReq }) {
   return (
     <div className="feature-req-card">
-      <UpvoteBtn className="feature-votes" featureReq={featureReq}/>
-      <h3>{featureReq.title}</h3>
-      <p className='body'>{featureReq.description}</p>
-      <CommentsCount count={featureReq.comments.length}/>
+      <div className="feature-votes">
+        <UpvoteBtn featureReq={featureReq}/>
+      </div>
+      <Link className="feature-link" to="/">
+        <div className="body">
+          <div className="feature-title">
+            <span>{featureReq.title}</span>
+          </div>
+          <div className="feature-details">
+            <div className="truncate">
+              <p className='body'>{featureReq.description}</p>
+            </div>
+          </div>
+        </div>
+        <CommentsCount count={featureReq.comments.length}/>
+      </Link> 
     </div>
   );
 }

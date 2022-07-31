@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { GoTriangleUp } from 'react-icons/go'
 import { FeatureReqContext } from '../context/FeatureReqContext';
-
+import '../styles/upvote.css'
 
 const UpvoteBtn = ({featureReq}) => {
   const [featureReqs, updateFeatureReqs] = useContext(FeatureReqContext);
@@ -27,10 +27,10 @@ const UpvoteBtn = ({featureReq}) => {
 
   return (
     <div>
-      <button onClick={updateUpvoteHandler}>
+      <div className="upvote" onClick={updateUpvoteHandler}>
         <GoTriangleUp />
-        <b>{featureReq.upvotes}</b>
-      </button>
+        <span>{featureReq.upvotes}</span>
+      </div>
     </div>
   )
 }

@@ -3,6 +3,7 @@ import FeatureRequestCard from '../components/FeatureRequestCard';
 import Navbar from '../components/Navbar';
 import { FeatureReqContext } from '../context/FeatureReqContext';
 import '../styles/home.css';
+import FeatureAdd from './FeatureAdd';
 
 const Home = () => {
 
@@ -11,26 +12,29 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="main-container">
-        <div className="home">
-          <section className="home-left">
-            Add Feature Request
-          </section>
-          <section className="home-right">
-            <main>
-              {featureReqs.length > 0 ?  (
-                <ul>
-                  {featureReqs.map((featureReq) => {
-                    return (
-                      <li>
-                        <FeatureRequestCard featureReq={featureReq} />
-                      </li>
-                    )
-                  })}
-                </ul>
-              ) : "No feature reqs"}
-            </main>
-          </section>
+      <div className="content-container">
+        <div className="content-inner-container">
+          <div className="subdomain-sidebar-container">
+            <section className="sidebar-container">
+              <FeatureAdd />
+            </section>
+            <section className="main-container">
+              <main className="feature-list-container">
+                <div className="feature-list">
+                  <div className="top-container">
+                    Showing Trending posts
+                  </div>
+                  {featureReqs.length > 0 ?  (
+                      featureReqs.map((featureReq) => {
+                        return (
+                          <FeatureRequestCard featureReq={featureReq} />
+                        )
+                      })
+                  ) : "No feature reqs"}
+                </div>
+              </main>
+            </section>
+          </div>
         </div>
       </div>
     </>
