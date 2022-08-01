@@ -1,5 +1,6 @@
 import React, {useContext, useState} from 'react'
 import { FeatureReqContext } from '../context/FeatureReqContext';
+import '../styles/feedback-form.css'
 
 const FeedbackForm = () => {
   const [feedbackTitle, setFeedbackTitle] = useState('');
@@ -47,17 +48,39 @@ const FeedbackForm = () => {
 
 
   return (
-    <div>
+    <div className="create-post-form">
       <form>
-        <label htmlFor="">INPUT</label>
-        <input type="text" id="post-input" placeholder="Short, descriptive title" onChange={handleTitleChange} value={feedbackTitle}/>
+        <div className="form-field">
+          <label className="uppercase-header" htmlFor="">TITLE</label>
+          <div className="text-input">
+            <div className="input-container">
+              <input type="text" id="post-input" placeholder="Short, descriptive title" onChange={handleTitleChange} value={feedbackTitle}/>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div className="form-field">
+          <div className="uppercase-header">
+            <label htmlFor="post-details">DETAILS</label>
+          </div>
+          <div className="auto-resize-textarea">
+            <span className="input-container">
+              <textarea name="post-details" placeholder="Any additional details..." id="post-details" rows="3" onChange={handleDetailsChange} value={feedbackDetail}></textarea> 
+            </span>
+          </div>
+          
+        </div>
+        
+        <div className="form-buttons">
+          <div className="upload-image-button">
 
-        <label htmlFor="post-details">DETAILS</label>
-        <textarea name="post-details" id="post-details" cols="30" rows="10" onChange={handleDetailsChange} value={feedbackDetail}></textarea> 
-
-        <button onClick={(e) => onSubmitHandler(e)}>CREATE POST</button>
-        {feedbackTitleError && <p>{feedbackTitleError}</p>}
-        {feedbackDetailError && <p>{feedbackDetailError}</p>}
+          </div>
+          <button class="canny-button" onClick={(e) => onSubmitHandler(e)}>CREATE POST</button>
+          {feedbackTitleError && <p>{feedbackTitleError}</p>}
+          {feedbackDetailError && <p>{feedbackDetailError}</p>}
+        </div>
+        
       </form>
     </div>
   )

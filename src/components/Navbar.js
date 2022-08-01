@@ -21,7 +21,11 @@ const Navbar = () => {
               </Link> 
             </div>
             <div className="secondary-nav">
-              Feature Requests
+              <div className="dropdown-container">
+                <div className="option-content">
+                  <span className="feature-requests-title">FEATURE REQUESTS</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

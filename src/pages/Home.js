@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import FeatureRequestCard from '../components/FeatureRequestCard';
-import Navbar from '../components/Navbar';
 import { FeatureReqContext } from '../context/FeatureReqContext';
 import '../styles/home.css';
 import FeatureAdd from './FeatureAdd';
