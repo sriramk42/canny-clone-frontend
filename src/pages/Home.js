@@ -11,7 +11,6 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
       <div className="content-container">
         <div className="content-inner-container">
           <div className="subdomain-sidebar-container">

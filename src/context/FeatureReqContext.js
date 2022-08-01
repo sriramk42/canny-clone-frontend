@@ -7,7 +7,6 @@ export function FeatureReqProvider({ children }) {
   const [featureReqs, setFeatureReqs] = useState(
     JSON.parse(localStorage.getItem('featureReqs')) || localData.featureRequests
   );
-  console.log(featureReqs)
 
   const updateFeatureReqs = (featureReqs) => {
     console.log(featureReqs);
