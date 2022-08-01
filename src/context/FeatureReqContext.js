@@ -9,9 +9,7 @@ export function FeatureReqProvider({ children }) {
   );
 
   const updateFeatureReqs = (featureReqs) => {
-    console.log(featureReqs);
     localStorage.setItem('featureReqs', JSON.stringify(featureReqs));
-
     setFeatureReqs(featureReqs);
   };
 
