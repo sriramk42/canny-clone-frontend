@@ -11,7 +11,7 @@ const FeatureAdd = () => {
     <div className="board-details">
       <div className="heading">Create a Post</div>
       <div className="description">
-        <p className="line">Let us know what features would help you collect and manage user feedback</p>
+        <p className="line">Let us know what features would help you collect & manage user feedback</p>
       </div>
       <FeedbackForm />
     </div>

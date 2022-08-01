@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import FeatureRequestCard from '../components/FeatureRequestCard';
+import TopContainer from '../components/TopContainer';
 import { FeatureReqContext } from '../context/FeatureReqContext';
 import '../styles/home.css';
 import FeatureAdd from './FeatureAdd';
@@ -17,11 +18,9 @@ const Home = () => {
               <FeatureAdd />
             </section>
             <section className="main-container">
-              <main className="feature-list-container">
-                <div className="feature-list">
-                  <div className="top-container">
-                    Showing Trending posts
-                  </div>
+              <main className="post-list-container">
+                <div className="post-list">
+                  <TopContainer />
                   {featureReqs.length > 0 ?  (
                       featureReqs.map((featureReq) => {
                         return (

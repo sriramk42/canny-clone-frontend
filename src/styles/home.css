@@ -31,12 +31,12 @@
   flex: 1;
 }
 
-.feature-list-container {
+.post-list-container {
   overflow: visible;
   background: #fff;
 }
 
-.feature-list {
+.post-list {
   display: flex;
   flex-direction: column;
 }
