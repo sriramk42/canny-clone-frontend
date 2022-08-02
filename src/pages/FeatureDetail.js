@@ -55,6 +55,11 @@ const FeatureDetail = () => {
                   </div>
                 </div>
                 <div className="post-activity">
+                  <div className="header">
+                    <div className="post-activity-left-header">
+                      Activity
+                    </div>
+                  </div>
                   <CommentsList comments={currentFeatureReq.comments} featureID={featureID} />
                 </div>
               </div>

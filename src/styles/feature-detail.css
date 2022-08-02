@@ -85,3 +85,20 @@
   align-items: stretch;
   margin: 0 0 30px 0;
 }
+
+.post-activity-left-header {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: rgb(153, 153, 153);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 17px;
+  padding: 0px 30px 0px 55px;
+  margin: 0px 0px 10px;
+}
+
+.post-activity {
+  margin: 30px 0 0;
+}

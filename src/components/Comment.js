@@ -1,5 +1,6 @@
 import React from 'react'
 import Reply from './Reply'
+import '../styles/comment.css'
 
 const Comment = ({comment}) => {
   const {id, content, user, replies} = comment
@@ -7,14 +8,31 @@ const Comment = ({comment}) => {
   const repliesArr = replies ? replies : []
 
   return (
-    <div>
-      <img src={user.image} alt="" />
-      <h4>{user.name}</h4>
-      <p>{content}</p>
-      {repliesArr.map((reply, i) => (
-        <Reply reply={reply} id={id} key={id}/>
-      ))}
-
+    <div className="comment">
+      <div className="comment-top-container">
+        <div className="comment-top-container-left">
+          <div className="user-avatar-container">
+            <div className="user-avatar">
+              <div className="avatar-container">
+                <img src={`${comment.user.image.split('.')[1]}.jpg`} alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="user-info">
+            <h4>{user.name}</h4>
+          </div>
+        </div>
+        <div className="comment-top-container-right">
+        </div>
+      </div>
+      <div className="comment-bottom-container">
+        <div className="comment-body">
+          {content}
+          {repliesArr.map((reply, i) => (
+            <Reply reply={reply} id={id} key={id}/>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
