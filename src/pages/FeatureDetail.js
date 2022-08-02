@@ -49,9 +49,7 @@ const FeatureDetail = () => {
                     </div>
                   </div>
                   <div className="comment-composer">
-                    <div className="composer">
-                      <AddComment maxLength={100} featureReqs={featureReqs} updateFeatureReqs={updateFeatureReqs} featureID={featureID}/>
-                    </div>
+                    <AddComment maxLength={100} featureReqs={featureReqs} updateFeatureReqs={updateFeatureReqs} featureID={featureID}/>
                   </div>
                 </div>
                 <div className="post-activity">

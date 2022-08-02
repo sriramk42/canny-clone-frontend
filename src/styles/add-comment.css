@@ -12,3 +12,42 @@
   line-height: 22px;
   font-family: inherit;
 }
+
+.composer-form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.auto-resize-textarea{
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+  background:#fff;
+  cursor: text;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+
+.add-comment-button {
+  background: #525df9;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  justify-content: center;
+  margin: 0;
+  padding: 14px 36px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  overflow: hidden;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: auto;
+}

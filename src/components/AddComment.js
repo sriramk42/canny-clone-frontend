@@ -28,18 +28,22 @@ const AddComment = ({maxLength, featureReqs, updateFeatureReqs, featureID}) => {
 
 
   return (
-    <div>
-      <textarea
-          type='text'
-          rows='1'
-          className='add-comment-textarea'
-          maxLength={maxLength}
-          placeholder='Leave a comment'
-          value={comment}
-          onChange={(e) => setComment(e.target.value)}
-        />
-      <button onClick={() => addComment(comment)}></button>
-    </div>
+    <>
+      <div className="composer-form">
+        <div className="auto-resize-textarea">
+          <textarea
+              type='text'
+              rows='1'
+              className='add-comment-textarea'
+              maxLength={maxLength}
+              placeholder='Leave a comment'
+              value={comment}
+              onChange={(e) => setComment(e.target.value)}
+            />        
+        </div>
+      </div>
+      <button className="add-comment-button" onClick={() => addComment(comment)}>SUBMIT</button>   
+    </>  
   )
 }
 
