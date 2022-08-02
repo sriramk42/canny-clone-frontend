@@ -3,7 +3,7 @@ import Reply from './Reply'
 import '../styles/comment.css'
 
 const Comment = ({comment}) => {
-  const {id, content, user, replies} = comment
+  const {content, user, replies} = comment
 
   const repliesArr = replies ? replies : []
 
@@ -29,7 +29,7 @@ const Comment = ({comment}) => {
         <div className="comment-body">
           {content}
           {repliesArr.map((reply, i) => (
-            <Reply reply={reply} id={id} key={id}/>
+            <Comment comment={reply}/>
           ))}
         </div>
       </div>
