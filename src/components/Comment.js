@@ -1,5 +1,4 @@
 import React from 'react'
-import Reply from './Reply'
 import '../styles/comment.css'
 
 const Comment = ({comment}) => {
