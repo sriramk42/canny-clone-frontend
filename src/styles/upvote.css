@@ -1,0 +1,6 @@
+.upvote > span {
+  min-height: 13px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 22px;
+}

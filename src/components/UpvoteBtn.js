@@ -26,12 +26,14 @@ const UpvoteBtn = ({featureReq}) => {
   };
 
   return (
-    <div>
+    <>
       <div className="upvote" onClick={updateUpvoteHandler}>
         <GoTriangleUp />
+      </div>
+      <div>
         <span>{featureReq.upvotes}</span>
       </div>
-    </div>
+    </>
   )
 }
 

@@ -7,6 +7,7 @@ const CommentsCount = ({count}) => {
     <div className="post-comments-count">
       <span className="icon-comment"><FaRegCommentAlt /></span>
       <span>{count}</span>
+      
     </div>
   )
 }
