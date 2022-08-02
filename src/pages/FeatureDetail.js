@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import {useParams} from 'react-router-dom'
 import { FeatureReqContext } from '../context/FeatureReqContext'
+import { UserContext } from '../context/UserContext'
 import UpvoteBtn from '../components/UpvoteBtn'
 import AddComment from '../components/AddComment'
 import CommentsList from '../components/CommentsList'
@@ -8,6 +9,7 @@ import '../styles/feature-detail.css'
 
 const FeatureDetail = () => {
   const [featureReqs, updateFeatureReqs] = useContext(FeatureReqContext)
+  const [currentUser, setCurrentUser] = useContext(UserContext)
   const {featureID} = useParams()
 
   const currentFeatureReq = featureReqs.find(featureReq => featureReq.id === parseInt(featureID))
@@ -36,18 +38,6 @@ const FeatureDetail = () => {
                     </div>
                   </div>
                   <div className="post-content">
-                    <div className="post-author">
-                      <div className="user-lockup">
-                        <div className="user-avatar-container">
-                          <div className="user-avatar">
-                            <img src="" alt="" />
-                          </div>
-                        </div>
-                        <div className="user-info">
-
-                        </div>
-                      </div>
-                    </div>
                     <div className="post-body">
                       <div className="details">
                         <div className="markdown">

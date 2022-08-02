@@ -1,0 +1,14 @@
+.add-comment-textarea {
+  width: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  color: #333;
+  background: none;
+  resize: none;
+  font-size: 15px;
+  min-height: 21px;
+  line-height: 22px;
+  font-family: inherit;
+}

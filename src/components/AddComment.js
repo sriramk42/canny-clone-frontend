@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../styles/add-comment.css'
 
 const AddComment = ({maxLength, featureReqs, updateFeatureReqs, featureID}) => {
 
@@ -30,7 +31,8 @@ const AddComment = ({maxLength, featureReqs, updateFeatureReqs, featureID}) => {
     <div>
       <textarea
           type='text'
-          className={``}
+          rows='1'
+          className='add-comment-textarea'
           maxLength={maxLength}
           placeholder='Leave a comment'
           value={comment}
