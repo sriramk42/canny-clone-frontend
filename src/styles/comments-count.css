@@ -1,0 +1,20 @@
+.post-comments-count {
+  font-size: 15px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  min-width: 45px;
+  padding: 5px;
+  margin: -5px -10px -10px 0;
+  box-sizing: border-box;
+}
+
+.icon-comment {
+  color: #aaa;
+  margin: 0 6px 0 0;
+}
+
+.post-comments-count > span {
+  font-size: 15px;
+  line-height: 22px;
+}

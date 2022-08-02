@@ -5,7 +5,7 @@ import '../styles/navbar.css'
 const Navbar = () => {
   return (
     <div className="public-nav">
-      <div className="content-container">
+      <div className="navbar-content-container">
         <div className="content-inner-container">
           <div className="nav-container">
             <div className="main-nav">

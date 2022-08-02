@@ -11,12 +11,12 @@ export default function FeatureRequestCard({ featureReq }) {
         <UpvoteBtn featureReq={featureReq}/>
       </div>
       <Link className="feature-link" to={`/feature/detail/${featureReq.id}`}>
-        <div className="body">
+        <div className="feature-body">
           <div className="feature-title">
             <span>{featureReq.title}</span>
           </div>
           <div className="feature-details">
-            <div className="truncate">
+            <div className="feature-truncate">
               <p className='body'>{featureReq.description}</p>
             </div>
           </div>

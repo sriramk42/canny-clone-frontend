@@ -3,6 +3,9 @@ body {
   font-family: -apple-system,BlinkMacSystemFont,SFUI,HelveticaNeue,Helvetica,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #333;
+  background: #fff;
+  padding: 0;
 }
 
 code {
