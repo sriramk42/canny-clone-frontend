@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import '../styles/add-comment.css'
+import { UserContext } from '../context/UserContext';
 
 const AddComment = ({maxLength, featureReqs, updateFeatureReqs, featureID}) => {
 
   const [comment, setComment] = useState('');
-  
+  const [currentUser, setCurrentUser] = useContext(UserContext)
+
   const addComment = (comment) => {
     updateFeatureReqs(
       featureReqs.map(featureReq => 
@@ -16,6 +18,7 @@ const AddComment = ({maxLength, featureReqs, updateFeatureReqs, featureID}) => {
               {
                 id: featureReq.comments[featureReq.comments.length - 1].id + 1,
                 content: comment,
+                user: currentUser
               }
             ]
           }

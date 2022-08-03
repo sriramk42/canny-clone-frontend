@@ -1,0 +1,53 @@
+.reply-box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+.reply-box-container{
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+  background:#fff;
+  cursor: text;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.reply-box-textarea {
+  width: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  color: #333;
+  background: none;
+  resize: none;
+  font-size: 15px;
+  min-height: 21px;
+  line-height: 22px;
+  font-family: inherit;
+}
+
+.reply-submit-btn {
+  background: #525df9;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  justify-content: center;
+  margin: 0;
+  padding: 14px 36px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  overflow: hidden;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: auto;
+}

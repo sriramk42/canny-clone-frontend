@@ -60,6 +60,14 @@
   font-weight: 600;
 }
 
+.user-info-name {
+  font-size: 15px;
+  line-height: 22px;
+  color: #333;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
 .comment-bottom-container {
   display: flex;
   flex-direction: column;
@@ -70,4 +78,28 @@
 .comment-body {
   overflow-wrap: break-word;
   word-break: break-word;
+}
+
+.comment-menu {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 0;
+} */
+
+.comment-menu-menu {
+  display: flex;
+  flex-wrap: wrap;
+} 
+
+.menu-link {
+  display: flex;
+}
+
+.reply {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 500;
+  color: #666;
 }
