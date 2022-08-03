@@ -41,6 +41,7 @@
   background: none;
   font-size: 15px;
   line-height: 22px;
+  outline: none;
 }
 
 .auto-resize-textarea {
