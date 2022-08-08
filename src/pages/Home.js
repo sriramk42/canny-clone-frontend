@@ -20,7 +20,7 @@ const Home = () => {
             <section className="main-container">
               <main className="post-list-container">
                 <div className="post-list">
-                  <TopContainer />
+                  {/* <TopContainer /> */}
                   {featureReqs.length > 0 ?  (
                       featureReqs.map((featureReq) => {
                         return (
